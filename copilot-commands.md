@@ -299,7 +299,36 @@ Focus on clarity and practicality; assume a single highly-motivated developer mi
 
 ---
 
-## 5. How to Use This File Day-to-Day
+## 5. EVA FinOps & Cost Attribution
+
+### Pricing Data Location
+
+**Path**: `eva-orchestrator/docs/EVA-2.0/eva-finops/config/`
+
+**Files**:
+
+- `eva-finops-pricing-v0.1.csv` - Human-editable pricing reference
+- `eva-finops-pricing-v0.1.json` - Programmatic pricing lookup
+
+**Contents**: Azure service pricing for EVA Suite components:
+
+- LLM Services (GPT-4.1, GPT-4o, mini variants) - per 1M tokens
+- OCR (Azure AI Document Intelligence) - per page
+- Search (Azure AI Search S1/S2) - per hour
+- Cache (Redis Standard) - per month
+- Storage (Blob, Data Lake) - per GB-month
+- Compute (App Service/ACA) - per month
+
+**Usage**: Enable cost estimation in EVA Orchestrator and FinOps dashboards based on:
+
+- Token counts from LLM calls
+- Pages processed by Document Intelligence
+- Storage volume and compute hours
+- Attribution via EVA headers (x-eva-project, x-eva-app, x-eva-feature, x-eva-env)
+
+---
+
+## 6. How to Use This File Day-to-Day
 
 1. Open the repository you want to work in (`eva-orchestrator`, `eva-da-2`, `eva-meta`, `eva-suite-liveops`, etc.).  
 2. Open **Copilot Chat** in VS Code or on GitHub.  
