@@ -1,0 +1,65 @@
+version: 0.1
+mode: demo   # demo | build
+sprint_id: DEMO-000
+title: "EVA Suite Demo - Daily Increment"
+description: >
+  High-velocity visual/demo increment. Focus on UI, flows, mock data and narrative.
+  No heavy backend work. Goal: always have a working demo by morning.
+
+date: YYYY-MM-DD
+owner: marco
+lanes:
+  - meta
+  - orchestrator
+  - suite
+  - uiux
+
+tasks:
+  - id: DEMO-001
+    lane: suite
+    repo: eva-suite
+    path: "apps/demo-web"
+    type: feature      # feature | doc | fix | refactor
+    title: "Add EVA Suite homepage hero section"
+    description: >
+      Implement a simple, bilingual hero section describing EVA Suite and
+      linking to the main products. Focus on clarity, not perfection.
+    priority: high     # high | medium | low
+    status: planned    # planned | in-progress | done
+    dependencies: []
+    acceptance_criteria:
+      - Homepage loads without errors
+      - Hero explains EVA Suite in 2–3 short sentences
+      - Button links to /products
+
+  - id: DEMO-002
+    lane: uiux
+    repo: eva-suite
+    path: "apps/demo-web"
+    type: doc
+    title: "Document baseline EVA design tokens"
+    description: >
+      Create a simple markdown doc listing color, spacing, and typography
+      tokens used in the demo.
+    priority: medium
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - File exists under docs/ui/tokens.md
+      - Tokens referenced by at least one component
+
+  - id: DEMO-003
+    lane: meta
+    repo: eva-meta
+    path: "vault"
+    type: doc
+    title: "Link context-persistence inventory into Vault backlog"
+    description: >
+      Ensure CONTEXT-PERSISTENCE-INVENTORY.md is referenced from vault.md
+      and backlog-map.md so the Crew knows where to start memory work.
+    priority: low
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - vault.md references the inventory document
+      - backlog-map.md mentions Vault’s context work
