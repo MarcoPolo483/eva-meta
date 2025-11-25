@@ -1,0 +1,115 @@
+version: 0.1
+mode: demo
+sprint_id: DEMO-001
+title: "EVA Suite – First Public Demo Skeleton"
+description: >
+  Focus on a minimal but coherent EVA Suite demo experience:
+  - A basic homepage
+  - A tokens/design doc
+  - Proper linkage of context inventory into the Vault backlog and master map.
+
+date: 2025-11-24
+owner: marco
+
+lanes:
+  - suite
+  - uiux
+  - meta
+  - vault
+  - orchestrator
+
+tasks:
+  - id: DEMO-001-01
+    lane: suite
+    repo: eva-suite
+    path: "apps/demo-web"
+    type: feature
+    title: "Minimal EVA Suite homepage skeleton"
+    description: >
+      Create a very simple homepage in apps/demo-web (if it exists, reuse it) that:
+      - Displays 'EVA Suite' as main title
+      - Briefly explains EVA in 2–3 short bullets
+      - Has links or buttons for: EVA DA, EVA Chat, EVA Orchestrator, EVA Knowledge Vault (even if they are placeholder routes).
+    priority: high
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - Homepage component exists and compiles
+      - Text is bilingual-ready (structure allows EN/FR later)
+      - No build errors
+
+  - id: DEMO-001-02
+    lane: uiux
+    repo: eva-suite
+    path: "apps/demo-web"
+    type: doc
+    title: "Initial EVA design tokens doc"
+    description: >
+      Create a markdown file listing initial design tokens for EVA Suite:
+      - Colors
+      - Spacing
+      - Typography
+      Location suggestion: docs/ui/tokens.md inside eva-suite (or closest equivalent).
+    priority: medium
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - docs/ui/tokens.md (or similar) exists
+      - At least 3–5 tokens defined for each category
+
+  - id: DEMO-001-03
+    lane: meta
+    repo: eva-meta
+    path: "backlogs"
+    type: doc
+    title: "Link context-persistence inventory into Vault backlog"
+    description: >
+      Ensure CONTEXT-PERSISTENCE-INVENTORY.md (wherever it currently lives) is linked from
+      eva-meta/backlogs/vault.md and from eva-meta/backlog-map.md under the Knowledge Vault lane.
+      The goal is to make this document an official seed source for the Vault lane.
+    priority: high
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - vault.md references the inventory document
+      - backlog-map.md references the Vault context work and points to the inventory
+
+  - id: DEMO-001-04
+    lane: vault
+    repo: eva-meta
+    path: "vault"
+    type: doc
+    title: "Create EVA Knowledge Vault README"
+    description: >
+      Create a README under eva-meta/vault/README.md that briefly explains:
+      - What the Knowledge Vault is
+      - What kinds of documents live there (inventories, diagrams, decisions, context schemas)
+      - How the Agile Crew and Copilot are expected to use it (read-only for now).
+    priority: medium
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - eva-meta/vault/README.md exists
+      - It mentions CONTEXT-PERSISTENCE-INVENTORY.md as one of the first seed docs
+      - It references the 7 lanes as context
+
+  - id: DEMO-001-05
+    lane: orchestrator
+    repo: eva-orchestrator
+    path: ".github/workflows"
+    type: infra
+    title: "Scaffold demo-nightly workflow (placeholder)"
+    description: >
+      Ensure .github/workflows/demo-nightly.yml exists in the chosen repo (eva-orchestrator or eva-suite)
+      with a minimal safe pipeline:
+      - schedule + workflow_dispatch
+      - checkout
+      - setup Node
+      - echo which sprint file it would use (eva-meta/sprints/sprint-001-demo.yml)
+      - no real build or deployment yet.
+    priority: high
+    status: planned
+    dependencies: []
+    acceptance_criteria:
+      - Workflow passes YAML validation
+      - Manual workflow_dispatch run succeeds with only echo steps

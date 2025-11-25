@@ -18,13 +18,15 @@ The central cross-project intelligence system that the Agile Crew and Copilot co
 
 
 
-\### 2. Indexing Layer
+### 2. Indexing Layer
 
-\- Cross-lane relationship map
+- Cross-lane relationship map
 
-\- Query mapping
+- Query mapping
 
-\- Seed source: CONTEXT-PERSISTENCE-INVENTORY.md (current systems + gaps)
+- Seed source: [CONTEXT-PERSISTENCE-INVENTORY.md](../../eva-suite/docs/CONTEXT-PERSISTENCE-INVENTORY.md) (current systems + gaps)
+
+- Context schemas and memory patterns
 
 
 

@@ -206,9 +206,11 @@ Purpose: The cross-project, living intelligence library acting as EVA’s memory
 
 \- Query Layer  
 
-\- “Brain API” for Copilot  
+\- "Brain API" for Copilot  
 
 \- Auto-Updater via Crew  
+
+\- **Context Memory Work** — Seed from [CONTEXT-PERSISTENCE-INVENTORY.md](../eva-suite/docs/CONTEXT-PERSISTENCE-INVENTORY.md)
 
 
 
