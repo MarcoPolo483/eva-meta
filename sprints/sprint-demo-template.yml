@@ -6,6 +6,10 @@ description: >
   High-velocity visual/demo increment. Focus on UI, flows, mock data and narrative.
   No heavy backend work. Goal: always have a working demo by morning.
 
+references:
+  - "Plan: eva-meta/backlogs/demo-plan-dec24-2025.md"
+  - "Project tracker: eva-meta/backlogs/project-tracker-info-assistant.md"
+
 date: YYYY-MM-DD
 owner: marco
 lanes:

@@ -8,6 +8,10 @@ description: >
   - A tokens/design doc
   - Proper linkage of context inventory into the Vault backlog and master map.
 
+references:
+  - "Plan: eva-meta/backlogs/demo-plan-dec24-2025.md"
+  - "Project tracker: eva-meta/backlogs/project-tracker-info-assistant.md"
+
 date: 2025-11-24
 owner: marco
 
