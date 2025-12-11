@@ -1,0 +1,301 @@
+version: 0.1
+birthdate_format: YYYY-MM-DD
+last_updated: 2025-12-05
+
+agents:
+  # --- External Service Personas (SPxx) ---
+
+  - id: sp01-senior-advisor
+    code: SP01
+    layer: external
+    name: Senior Advisor
+    birthdate: 2025-12-05
+    home_repo: eva-lwo
+    home_doc: docs/agents/personas/SP01-senior-advisor.md
+    memory_location: eva-lwo/memory/sp01/
+    tools_location: eva-lwo/tools/sp01/
+    invoke:
+      channels: [eva-chat, local-cli]
+      shortcuts: ["/advisor"]
+    purpose: >
+      High-level framing, patterns and critique for complex problems. Advisory only.
+    trust_level: advisory
+    autonomy: C0
+    logs_to:
+      - eva-meta/orchestration/advisor
+      - eva-lwo/logs/advisor
+
+  - id: sp02-data-ingestion
+    code: SP02
+    layer: external
+    name: EVA Data Ingestion
+    birthdate: 2025-12-05
+    home_repo: eva-meta
+    home_doc: docs/agents/personas/SP02-eva-data-ingestion.md
+    memory_location: eva-meta/memory/sp02/
+    tools_location: eva-meta/tools/sp02/
+    invoke:
+      channels: [eva-da-admin-ui, cli, api]
+      shortcuts: ["/ingest-brief"]
+    purpose: >
+      From brief to ingestion plan to drafted ingestion pipeline and audited corpus definition.
+    trust_level: semi-automated
+    autonomy: C0-C1
+    logs_to:
+      - eva-meta/orchestration/ingestion
+      - ingestion/logs/audit
+
+  - id: sp06-ato-auditor
+    code: SP06
+    layer: external
+    name: ATO / Controls Auditor
+    birthdate: 2025-12-05
+    home_repo: eva-meta
+    home_doc: docs/agents/personas/SP06-ato-auditor.md
+    memory_location: eva-meta/memory/sp06/
+    tools_location: eva-meta/tools/sp06/
+    invoke:
+      channels: [cli, scheduled]
+      shortcuts: ["/sp06 audit-compliance", "/sp06 audit-provenance", "/sp06 generate-ato-evidence"]
+    purpose: >
+      Checks agents and applications against ATO, controls and ITSG-33 style expectations.
+      Validates provenance logs, autonomy levels, and generates compliance reports.
+    trust_level: advisory
+    autonomy: C0-C1
+    logs_to:
+      - eva-meta/orchestration/sp06/execution-logs
+      - eva-meta/memory/sp06/lessons-learned.md
+      - eva-meta/logs/compliance/audit-reports
+
+  # You can add SP03–SP08 here later as you formalize them.
+
+  # --- Internal DevTools Agents (Pxx) ---
+
+  - id: p00-devtools-catalog
+    code: P00
+    layer: devtools
+    name: DevTools Agents Catalog
+    birthdate: 2025-11-15
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P00-devtools-catalog.md
+    memory_location: eva-meta/memory/p00/
+    tools_location: eva-meta/tools/p00/
+    invoke:
+      channels: [docs]
+      shortcuts: []
+    purpose: >
+      Catalog and shared rules for all DevTools agents P01–P15.
+    trust_level: reference
+    autonomy: C0
+    logs_to: []
+
+  - id: p01-devtools-toolbox
+    code: P01
+    layer: devtools
+    name: DevTools – Agent Patterns & Toolbox
+    birthdate: 2025-11-15
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P01-devtools-toolbox-roadmap.md
+    invoke:
+      channels: [docs]
+      shortcuts: []
+    purpose: >
+      Master index for DevTools patterns P02–P15 and their relationship to pods and lifecycle.
+    trust_level: reference
+    logs_to: []
+
+  - id: p02-requirements-agent
+    code: P02
+    layer: devtools
+    name: Requirements Agent
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P02-requirements-agent.md
+    invoke:
+      channels: [github-actions, cli]
+      shortcuts: ["/jarvis refine", "/jarvis cdd-to-backlog"]
+    purpose: >
+      Convert CDDs and canvases into epics, stories, tasks and NFRs in a GC/EVA-compliant way.
+    trust_level: advisory
+    logs_to:
+      - eva-meta/orchestration/requirements
+
+  - id: p03-scrum-agent
+    code: P03
+    layer: devtools
+    name: Scrum Agent
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P03-scrum-agent.md
+    invoke:
+      channels: [github-actions]
+      shortcuts: ["/jarvis sprint-summary"]
+    purpose: >
+      Refine backlog items and draft sprint goals and summaries, aligned with Definition of Ready/Done.
+    trust_level: advisory
+    logs_to:
+      - eva-meta/orchestration/scrum
+
+  - id: p06-review-agent
+    code: P06
+    layer: devtools
+    name: Review Agent
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P06-review-agent.md
+    invoke:
+      channels: [github-actions]
+      shortcuts: ["/jarvis review"]
+    purpose: >
+      First-pass PR review assistant for EVA repos: tests, docs, style and basic security checks.
+    trust_level: advisory
+    logs_to:
+      - eva-meta/orchestration/review
+
+  - id: p07-testing-agent
+    code: P07
+    layer: devtools
+    name: Testing & Failure Explainer Agent
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P07-testing-agent.md
+    memory_location: eva-meta/memory/p07/
+    tools_location: eva-meta/tools/p07/
+    invoke:
+      channels: [github-actions, cli]
+      shortcuts: ["/p07 explain-failure", "/p07 suggest-tests", "/p07 coverage-gap"]
+    purpose: >
+      Generate tests from requirements, explain failures, detect coverage gaps and flaky tests.
+    trust_level: advisory
+    autonomy: C0-C1
+    logs_to:
+      - eva-meta/orchestration/p07/execution-logs
+      - eva-meta/memory/p07/lessons-learned.md
+
+  - id: p12-ux-accessibility
+    code: P12
+    layer: devtools
+    name: UX & Accessibility Agent
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P12-ux-accessibility-agent.md
+    memory_location: eva-meta/memory/p12/
+    tools_location: eva-meta/tools/p12/
+    invoke:
+      channels: [github-actions, cli, pre-commit]
+      shortcuts: ["/p12 review-a11y", "/a11y-check", "/i18n-check", "/gc-design-check"]
+    purpose: >
+      Ensure UI components meet WCAG 2.1 AA+, GC Design System, and bilingual requirements.
+    trust_level: advisory
+    autonomy: C0-C1
+    logs_to:
+      - eva-meta/orchestration/p12/execution-logs
+      - eva-meta/memory/p12/lessons-learned.md
+
+  - id: p15-devmaster-orchestrator
+    code: P15
+    layer: devtools
+    name: Dev Master Orchestrator
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P15-devmaster-orchestrator.md
+    invoke:
+      channels: [github-actions, cli]
+      shortcuts: ["/jarvis run", "/jarvis daily"]
+    purpose: >
+      Orchestrates DevTools agents across repos and workflows according to DevMaster rules and lifecycle.
+    trust_level: orchestrator
+    logs_to:
+      - eva-meta/orchestration/devmaster
+
+  # --- Meta Patterns (P16-P21) ---
+
+  - id: p16-awareness-protocol
+    code: P16
+    layer: devtools
+    name: Awareness Protocol
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P16-P21-meta-patterns.md
+    invoke:
+      channels: [all-agents]
+      shortcuts: []
+    purpose: >
+      Cross-cutting behaviour for all agents: confidence estimation, reflection, 
+      risk flagging, and escalation rules.
+    trust_level: meta
+    logs_to:
+      - eva-meta/orchestration/meta-awareness
+
+  - id: p17-swarm-pr-review
+    code: P17
+    layer: devtools
+    name: Swarm PR Review
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P16-P21-meta-patterns.md
+    invoke:
+      channels: [github-actions]
+      shortcuts: ["/jarvis swarm-review"]
+    purpose: >
+      Parallel micro-agent PR review (A11y, i18n, GC Design, FinOps, Security, Testing) 
+      with aggregated feedback.
+    trust_level: meta
+    logs_to:
+      - eva-meta/orchestration/swarm-review
+
+  - id: p18-tool-api-auto-onboarding
+    code: P18
+    layer: devtools
+    name: Tool/API Auto-Onboarding
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P16-P21-meta-patterns.md
+    invoke:
+      channels: [github-actions, cli]
+      shortcuts: ["/jarvis onboard-api"]
+    purpose: >
+      Generate typed clients, tests, docs, and governance notes from OpenAPI specs 
+      and APIM endpoints.
+    trust_level: meta
+    logs_to:
+      - eva-meta/orchestration/auto-onboarding
+
+  - id: p19-action-classification-safety
+    code: P19
+    layer: devtools
+    name: Action Classification & Safety
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P16-P21-meta-patterns.md
+    invoke:
+      channels: [all-agents]
+      shortcuts: []
+    purpose: >
+      Classify all agent actions as C0 (read), C1 (dev), C2 (governance), C3 (production) 
+      and enforce autonomy rules.
+    trust_level: meta
+    logs_to:
+      - eva-meta/orchestration/safety
+
+  - id: p20-continuous-self-improvement
+    code: P20
+    layer: devtools
+    name: Continuous Self-Improvement
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P16-P21-meta-patterns.md
+    invoke:
+      channels: [scheduled, cli]
+      shortcuts: ["/jarvis retrospective"]
+    purpose: >
+      Learn from logs, metrics, and incidents to propose improvements to agents, 
+      prompts, and processes.
+    trust_level: meta
+    logs_to:
+      - eva-meta/orchestration/self-improvement
+
+  - id: p21-provenance-fingerprinting
+    code: P21
+    layer: devtools
+    name: Provenance & Fingerprinting
+    home_repo: eva-meta
+    home_doc: docs/agents/devtools/P16-P21-meta-patterns.md
+    invoke:
+      channels: [all-agents]
+      shortcuts: []
+    purpose: >
+      Stamp every agent action with who/what/when/why/how for complete audit trail 
+      and ATO compliance.
+    trust_level: meta
+    logs_to:
+      - eva-meta/logs/agents/audit-log.jsonl

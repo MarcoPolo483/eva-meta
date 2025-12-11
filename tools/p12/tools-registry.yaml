@@ -1,0 +1,43 @@
+# P12 Tool Registry
+
+**Agent:** P12 - UX & Accessibility Agent  
+**Format:** YAML  
+**Purpose:** Birth certificates for all P12 tools
+
+---
+
+```yaml
+# Tool registry format per bootstrap protocol
+# Each tool gets a birth certificate when created
+
+tools: []
+
+# Example format (when first tool is created):
+# - tool_id: p12-wcag-contrast-checker
+#   name: WCAG Contrast Checker
+#   created: YYYY-MM-DD
+#   agent: P12
+#   file: check-wcag-contrast.ps1
+#   version: 1.0.0
+#   autonomy: C0
+#   purpose: Validate color contrast ratios for WCAG 2.1 AA/AAA compliance
+#   inputs:
+#     - foreground_color: hex
+#     - background_color: hex
+#   outputs:
+#     - contrast_ratio: float
+#     - wcag_level: A|AA|AAA|FAIL
+#   tests:
+#     - tests/test-contrast-checker.ps1
+#   evidence:
+#     - tests/evidence/contrast-checker/validation-report.md
+#   provenance_log: eva-meta/memory/p12/execution-history.json
+#   status: active
+#   last_used: YYYY-MM-DD
+#   success_rate: 0.0-1.0
+```
+
+---
+
+**Last Updated:** 2025-12-05  
+**Total Tools:** 0

@@ -1,0 +1,84 @@
+# P12 Execution History (P21 Provenance Log)
+
+**Agent:** P12 - UX & Accessibility Agent  
+**Format:** JSON (append-only)  
+**Purpose:** Complete audit trail of all P12 agent actions
+
+---
+
+```json
+{
+  "agent": "P12-UX-Accessibility",
+  "log_version": "1.0",
+  "created": "2025-12-05",
+  "executions": []
+}
+```
+
+---
+
+## Log Entry Format (P21 Protocol)
+
+Each execution appends an entry:
+
+```json
+{
+  "agentFingerprint": {
+    "agent_id": "p12-ux-accessibility",
+    "version": "1.0",
+    "execution_id": "p12-exec-YYYYMMDD-NNN",
+    "timestamp": "ISO-8601"
+  },
+  "taskContext": {
+    "task": "command-name",
+    "repo": "repository-name",
+    "branch": "branch-name",
+    "requestor": "human|agent-code|system",
+    "trigger": "manual-cli|github-actions|agent-request"
+  },
+  "awareness": {
+    "confidence": 0.0-1.0,
+    "reasoning": "why this confidence score",
+    "risks": ["potential issues"],
+    "missingContext": ["what info is missing"],
+    "suggestedAction": "next steps"
+  },
+  "toolsUsed": [
+    {
+      "tool": "script-name.ps1",
+      "version": "1.0",
+      "autonomy": "C0|C1|C2|C3",
+      "duration_ms": 0,
+      "result": "outcome description"
+    }
+  ],
+  "changeSummary": {
+    "files_analyzed": 0,
+    "issues_found": 0,
+    "severity": "low|medium|high|critical",
+    "recommendations": "suggested fixes"
+  },
+  "humanApproval": {
+    "required": false,
+    "reason": "why approval needed or not"
+  },
+  "provenance": {
+    "who": "P12-UX-Accessibility-Agent",
+    "what": "action description",
+    "when": "ISO-8601",
+    "why": "reason for action",
+    "how": "method/tools used"
+  },
+  "memoryUpdate": {
+    "lesson_learned": false,
+    "pattern_added": "pattern-name or null",
+    "confidence_boost": 0.0,
+    "reusable": false
+  }
+}
+```
+
+---
+
+**Last Updated:** 2025-12-05  
+**Total Executions:** 0
