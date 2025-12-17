@@ -1,0 +1,234 @@
+{
+  "executedBy": "marco",
+  "reason": "Phase 3 ZERO TOLERANCE path enforcement cleanup",
+  "movedItems": [
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backlogs",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.6589982Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\folders\\backlogs",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": null
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\sprints",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.6739373Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\folders\\sprints",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": null
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\vault",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.6883149Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\folders\\vault",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": null
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\ACHIEVEMENT-REPORT-20251124.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.6942698Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\ACHIEVEMENT-REPORT-20251124.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "A076DB2D363977FAF94A0B08136ADF297443ACF9263C6259241B68C7F86CC09B",
+        "size": 12858,
+        "lastModified": "2025-11-28T12:51:45.4511097-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\ACHIEVEMENT-REPORT-20251124.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backlog-map.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.6998111Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\backlog-map.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "B2778A5A55B1EB4781FD6215FBA00E503881057EA788817E5EE6DAD48DBFA6C7",
+        "size": 4287,
+        "lastModified": "2025-11-28T12:51:45.4541106-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backlog-map.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\COMPLETE-list-sessions.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7060643Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\COMPLETE-list-sessions.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "108B66689AC0BAD8D6C7686B33E939B3761A7E0BD867FA15A78243F411A38787",
+        "size": 5251,
+        "lastModified": "2025-11-28T12:51:45.4521101-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\COMPLETE-list-sessions.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\copilot-commands.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7117722Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\copilot-commands.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "30F6807F186D9CFCA29D17644EBF3814B451EBEC7BF469545D6BE7515F9964AD",
+        "size": 12089,
+        "lastModified": "2025-11-28T12:51:45.4621394-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\copilot-commands.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\copilot-unified-brain.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7171480Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\copilot-unified-brain.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "AD99797DB3DCA5871E81643BFC4FA043C78A1405C543A05F52E6B22EF4CDD37B",
+        "size": 6369,
+        "lastModified": "2025-11-28T12:51:45.4641122-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\copilot-unified-brain.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\ENTERPRISE-BEST-PRACTICES.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7227500Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\ENTERPRISE-BEST-PRACTICES.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "54124CEB5F29FB0B10CB997AA23A2952E649BD7038E6F8C0E5CA69E2965A6427",
+        "size": 16204,
+        "lastModified": "2025-11-28T12:51:45.4531129-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\ENTERPRISE-BEST-PRACTICES.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\eva-suite-plan.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7280444Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\eva-suite-plan.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "CAEE96571CF409463258F8D24BA88DCE5E92C2C85A1C4FA1B6DAE2866E39BD82",
+        "size": 14362,
+        "lastModified": "2025-11-28T12:51:45.4651108-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\eva-suite-plan.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\eva-workspace-bootstrap.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7331957Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\eva-workspace-bootstrap.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "33798A144FBC93D332E9B4B59A4DCB7F4096B1848A816CC7CD643983E46125A9",
+        "size": 7020,
+        "lastModified": "2025-11-28T12:51:45.4651108-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\eva-workspace-bootstrap.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\QUALITATIVE-ASSESSMENT.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7386443Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\QUALITATIVE-ASSESSMENT.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "AFCFBD53CEE5FB9E5C00E293C8DEC831A07795ECBDA7C5686CB43C8171FD7FCD",
+        "size": 16552,
+        "lastModified": "2025-12-09T01:34:09.7490611-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\QUALITATIVE-ASSESSMENT.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\test-evidence-list-sessions.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7441393Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\test-evidence-list-sessions.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "9D8D24A095D7AAAFF77AE2124DB69C8DD5CDE596E8EDA1D6C3A1DC084DF882A2",
+        "size": 7598,
+        "lastModified": "2025-11-28T12:51:45.4691433-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\test-evidence-list-sessions.md"
+      }
+    },
+    {
+      "sourcePath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\time-reporting-scripts-catalog.md",
+      "executedBy": "marco",
+      "category": "path-enforcement",
+      "machine": "MSILAPTOP",
+      "timestamp": "2025-12-17T03:05:05.7504333Z",
+      "action": "moved",
+      "reason": "ZERO TOLERANCE: Outside mandatory folder structure",
+      "destinationPath": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\backups\\mandatory-folder-cleanup\\20251216-220457\\files\\time-reporting-scripts-catalog.md",
+      "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+      "fingerprint": {
+        "sha256": "3CF2D23BF0714865931760C7F66D2D7B38EE29B3ED7EC3C7B35380276BCEB0B0",
+        "size": 12469,
+        "lastModified": "2025-11-28T12:51:45.4691433-05:00",
+        "path": "C:\\Users\\marco\\Documents\\_AI Dev\\EVA Suite\\eva-meta\\time-reporting-scripts-catalog.md"
+      }
+    }
+  ],
+  "runId": "3dfa856f-3f41-4cb8-88b1-ad07d61ec901",
+  "totalMoved": 14,
+  "repo": "eva-meta",
+  "timestamp": "2025-12-17T03:05:05.7511167Z",
+  "approvedBy": "Marco Presta (Product Owner)"
+}
